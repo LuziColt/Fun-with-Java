@@ -1,0 +1,171 @@
+Einfache Aufgaben
+
+1. FIZZBUZZ:
+
+   int i = 1
+    for (i = 1; i <= 100; i++)
+     {
+      if (i % 3 == 0 && i % 5 == 0)
+         {
+           System.out.println("FizzBuzz");
+         }
+  
+      else if (i % 3 == 0 ) 
+         {
+           System.out.println("Fizz");
+         } 
+   
+       else if (i % 5 == 0)
+         {
+           System.out.println("Buzz");
+         }
+       else
+         {
+           System.out.println(i);
+         }
+      }
+
+      
+ 2. GERADE ZAHLEN:
+ 
+    int i = 17;
+    System.out.println(i % 2 == 0 ? "Zahl ist gerade" : i);   
+    
+ 
+3. SUMME ZWISCHEN 1 UND N
+
+   int n = 20;
+   int ergebnis = 0;
+
+   for (int i = 1; i <= n; i++)
+     {
+      ergebnis += i;
+     }
+   System.out.println(ergebnis);
+   
+   
+4. SUMME ZWISCHEN N UND M: 
+
+   int m = 15;
+   int ergebnis = 0;
+
+   for (int n = 5; n <= m; n++)
+    {
+     ergebnis +=n;
+    }
+   System.out.println(ergebnis);
+
+   
+5. POSITION: 
+
+   int[] numbers = {42, 1, 5, 7, 12, 42, 6, 8, 0, 42}
+
+   for (int i = 0; i < numbers.length; i++)
+    {
+     if (numbers[i] == 42)
+     {
+      System.out.println(i);
+     }
+    }
+
+
+6. MAXIMUM: 
+
+   int[] numbers = {42, 1, 5, 7, 12, 42, 6, 8, 0, 42}
+   int i = 0;
+   int max = numbers[0];
+
+   for (int i = 0; i < numbers.length; i++)
+    {
+     if(max < numbers[i])
+      {
+        max = numbers[i];
+      }
+    }
+   System.out.print(max);  
+    
+
+7. SUMME DES ARRAYS: 
+
+   int[] numbers = {42, 1, 5, 7, 12, 42, 6, 8, 0, 42}
+   int summe = 0;
+
+   for (int value : numbers) 
+    {
+     summe += value;
+    }      
+   System.out.print(summe); 
+   
+   
+8. MINIMUM, MAXIMUM UND DURCHSCHNITTSWERT:    
+
+   int[] numbers = {42, 1, 5, 7, 12, 42, 6, 8, 0, 42}
+   int i = 0;
+   int max = numbers[0];
+   int min = numbers [0]; 
+   float summe = 0;
+   float average= 0; 
+
+   for (int i = 0; i < numbers.length; i++)
+    {
+      if (min > numbers[i])
+        {
+         min = numbers[i];
+        }
+       
+      if(max < numbers[i])
+       {
+        max = numbers[i];
+       }
+      
+      summe += numbers[i];
+      
+     }
+     
+    average = summe / numbers.length
+     
+    System.out.print("This is the minimum:" + " " +  min + "\n" + "This is the maximum:" + " " + max  + "\n"+ "This is the average:" + " " + average);   
+
+     
+9. QUERSUMME:      
+
+int zahl = 1596
+int quersumme = 0;
+
+while (0 != zahl)
+{
+  quersumme = quersumme + (zahl %10);
+  zahl = zahl / 10;
+}
+System.out.println("Die Quersumme ist"+ quersumme);            
+            
+
+10. TEILER: 
+
+int a = 2000;
+int b = 1200;
+
+
+Step 1: a % b 
+Step 2: b / Ergebnis aus a % b 
+Step 3: Ergebnis aus a % b / (Ergebnis aus b / Ergebnis a % b)
+Step 4: If Step 3 gleich null Juhu
+
+
+11. PFEIL: 
+
+System.out.println(" " +  " " +"*" + "\n"+ " " +"***" + "\n" + "*****" + "\n" + " " +  " " +"*"  + "\n" +  " " +" " +"*");
+
+
+12: ALGORITHMUS: 
+
+Wenn A größer als B ist sollen die Variablen vertauscht werden 
+Ist B größer als A wird durch Anpassung so oft zu A hinzugefügt und bei B abgezogen, dass der Mittelwert gebildet wird
+
+
+
+
+
+
+
+

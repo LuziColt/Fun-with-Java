@@ -1,0 +1,226 @@
+1. SCHLEIFENÜBUNG- WHILE VS. DO-WHILE:
+
+   While-Schleife: 
+   int i=1
+   while (i<=10)
+    {
+     System.out.println (i);
+     i++;
+    } 
+   
+   Do-While:
+   int i=1
+   do 
+     {
+      System.out.println (i);
+      i++;
+     }
+   while (i<=10);
+   
+   Eine While-Schleife prüft erst, ob die Bedingung true ist, bevor sie den CodeBlock ausführt(kopfgesteuert), während eine Do-While Schleife den CodeBlock erst einmal ausführt und anschließend erst prüft,ob die Bedingung true ist(fußgesteuert).
+   
+   
+2. FOR-SCHLEIFE UND ARRAYS: 
+   
+   int[] intArray = new int[]{1, 2, 3, 4, 5};
+   for (int zahl: intArray)
+    {
+     System.out.println(zahl);
+    }
+    
+    
+3. SWITCH-ANWEISUNG:     
+
+   int i = 1; 
+   switch (i)
+    {
+     case 1:
+     System.out.println("Montag");
+       case 2: 
+       System.out.println("Dienstag");
+         case 3: 
+         System.out.println("Mittwoch");
+           case 4: 
+           System.out.println("Donnerstag");
+              case 5: 
+              System.out.println("Freitag");
+                case 6: 
+                System.out.println("Samstag");
+                  case 7: 
+                  System.out.println("Sonntag");
+     }
+     
+     
+4. IF-THEN-ELSE: 
+
+    int i = 0;
+    if (i % 2 == 0) 
+     {
+      System.out.println("Diese Zahl ist gerade");
+     }
+    else
+     {
+      System.out.println("Diese Zahl ist ungerade");
+     }
+ 
+
+5. LOGISCHE OPERATOREN: 
+
+   int zahl = 16
+   if (zahl > 10 && zahl < 20 || zahl < 5)
+    {
+     System.out.println("Zahl erfüllt die Bedingungen");
+    }
+   else
+    {
+     System.out.println("Zahl erfüllt nicht die Bedingungen");
+    }
+   
+   
+6. STRING-MANIPULATION:
+
+   String abc = "Arielle";
+   String cde= "Die kleine Meerjungfrau";
+   String abcdef = abc + cde;
+   System.out.println(abcdef.substring(17));  
+
+   
+7. ARITHMETISCHE OPERATOREN:
+
+   int a = 5;
+   int b = 6;
+   int c = a + b;
+   int d = a - b; 
+   int e = a * b; 
+   int f = a / b; 
+   System.out.println(c + "\n" + d + "\n" + e + "\n" + f);
+   
+
+8. TYPE-CASTING:
+
+   double pi;
+   pi = 3.14; 
+   int i= (int) pi;
+   System.out.println(i);
+   
+
+9. 1-DIMENSIONALE- ARRAYS: 
+
+    String[] StringArray = new String[]{ "Apfel", "Banane", "Cantaloupe", "Drachenfrucht", "Erdbeere" };
+    System.out.println (Arrays.toString(StringArray));
+
+    
+10. PRÜFUNG VON BEDINGUNGEN: 
+
+    int zahl = 16
+     if (zahl > 0)
+      {
+        System.out.println("Zahl ist größer als null");
+      }
+     if (zahl < 0)
+      {
+        System.out.println("Zahl ist kleiner als 0");
+      }
+     else 
+      {
+        System.out.println("Du hast 0 gefunden");
+      }
+
+      
+ 11. SCHLEIFEN UND STRING-MANIPULATION:
+ 
+    String Origin = "Java ist cool";
+    for (int m = Origin.length()- 1; m >= 0; m--)
+     {
+      System.out.print(Origin.charAt(m));
+     } 
+
+
+
+ 12. LOGISCHE OPERATOREN UND SCHLEIFEN: 
+
+     for (int i = 1; i <= 20; i++ )
+      {
+       if (i % 3 == 0)
+        {
+          continue;
+        }
+       System.out.println(i);
+      }
+ 
+ 
+ 13. STRING VERARBEITUNG UND SCHLEIFEN
+ 
+     String[] Vocalsearch = new String[] { "Heute", "gibt", "es", "Latte", "mit", "Kokos"};
+     Character[] vokale = {'a', 'e', 'i', 'o', 'u'};
+     int anzahlVokale = 0;
+       for (String searchText : Vocalsearch)
+        {
+         if(searchText.contains("" + vokale[0]))
+          {
+           anzahlVokale++;  
+          }
+         if (searchText.contains("" + vokale[1]))    
+          {
+           anzahlVokale++;  
+          }
+         if  (searchText.contains("" + vokale[2]))    
+          {
+           anzahlVokale++;  
+          }   
+         if  (searchText.contains("" + vokale[3]))   
+          {
+           anzahlVokale++;  
+          }  
+         if  (searchText.contains("" + vokale[4]))   
+          {
+           anzahlVokale++;  
+          }     
+        }
+       System.out.println(anzahlVokale);   
+ 
+ 
+ 14. DATENTYPEN UND BERECHNUNGEN:
+ 
+     short s = 7;
+     int m =   13;
+     long l=   137;
+     float f=  7,1;
+     double d= 7,13;
+
+     int sum = s + m 
+     System.out.println(sum);
+    
+     int dif = l - m
+     System.out.println(dif);
+
+     if (f==d)
+      {
+       System.out.println("Equal");
+      }
+     else 
+      {
+       System.out.println("Not equal");
+      }
+      
+      if (f!=d)
+      {
+       System.out.println("Not equal");
+      }
+     else 
+      {
+       System.out.println("Equal");
+      }
+ 
+ 15. ZUWEISUNGSOPERATOREN 
+     
+     int a = 7;
+     int b = 13;
+
+         System.out.println(a);
+
+     int c = a + b;
+
+         System.out.println(c);
+    
+    
